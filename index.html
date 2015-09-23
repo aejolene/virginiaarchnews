@@ -33,6 +33,26 @@
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(map);
   });
+                  onEachFeature: function (feature, layer) {
+                    if (feature.properties) {
+                         var content =    "<table class='table-striped table-bordered table-condensed' style='width: 300px'> "+
+                                            "<tr><th>Title</th><td>" + feature.properties.Title + "</td></tr>"+
+                                            "<tr><th>URL</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>"+
+                                        "<table>";
+                        if (document.body.clientWidth <= 767) {
+                            layer.on({
+                                click: function(e) {
+                                    $("#feature-title").html(feature.properties.Title);
+                                    $("#feature-info").html(content);
+                                    $("#featureModal").modal("show");
+                                }
+                            });
+                        } else {
+                            layer.bindPopup(content, {
+                                maxWidth: "auto",
+                                closeButton: false
+                            });
+                        };
   </script>
 </body>
 </html>
