@@ -1,0 +1,101 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Artifact Update from Virginia's James Fort",
+        "URL": "http://www.archaeology.org/news/3647-150828-virginia-jamestown-breastplate",
+        "lat": 37.20631,
+        "lon": -76.75932
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.75932,
+          37.20631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "She went to college to study anthropology and found her slave ...",
+        "URL": "https://www.washingtonpost.com/local/education/she-went-to-college-to-study-anthropology-and-found-her-slave-ancestors-nearby/2015/09/23/3e6a683e-5c9a-11e5-8e9e-dce8a2a2a679_story.html",
+        "lat": 38.22739,
+        "lon": -78.17506
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.17506,
+          38.22739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Intriguing internships: Classical archaeology at VMFA",
+        "URL": "http://www.wm.edu/news/stories/2015/intriguing-internship-classical-archaeology-at-vmfa.php",
+        "lat": 37.55617,
+        "lon": -77.47498
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.47498,
+          37.55617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Conservationists Take to the James to Oppose Over-River Power Line",
+        "URL": "http://wydaily.com/2015/09/22/local-news-conservationists-take-to-the-james-to-oppose-over-river-power-line/",
+        "lat": 37.20256,
+        "lon": -76.64802
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.64802,
+          37.20256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Teens Dig Into Black History As Urban Archeologists",
+        "URL": "http://www.npr.org/2015/09/05/437768166/teens-dig-into-black-history-as-urban-archeologists",
+        "lat": 37.436112,
+        "lon": -77.234665
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.234665,
+          37.436112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Laird: The archaeological significance of the Lumpkin's Slave Jail Site",
+        "URL": "http://www.richmond.com/opinion/their-opinion/guest-columnists/article_934ba487-420c-52f7-8c6c-ad92bb633210.html",
+        "lat": 37.5366,
+        "lon": -77.42852
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.42852,
+          37.5366
+        ]
+      }
+    }
+  ]
+}
