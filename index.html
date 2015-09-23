@@ -3,6 +3,7 @@
   <title>A Leaflet map!</title>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="jquery-2.1.1.min.js"></script>
   <style>
     #map{ width: 900px; height: 500px; }
   </style>
@@ -21,6 +22,12 @@
 		minZoom: 3
       
     }).addTo(map);
+    
+      // load GeoJSON from an external file
+  $.getJSON("virginia.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+  });
   </script>
 </body>
 </html>
