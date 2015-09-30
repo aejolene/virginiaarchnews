@@ -35,7 +35,7 @@
   
   $.getJSON("articlesraw.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-  L.geoJson(data).addTo(map).bindPopup(<b>Hello world!</><br>I am a popup.").openPopup();;
+    L.geoJson(data).addTo(map);
   });
   </script>
   <div>
