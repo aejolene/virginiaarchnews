@@ -37,39 +37,6 @@
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(map);
   });
-  var Article = L.geoJson(null, {
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng, {
-                        icon: L.icon({
-                            //iconUrl: "img/pinblue.png",
-                            //iconSize: [10, 12],
-                            //iconAnchor: [12, 28],
-                            //popupAnchor: [0, -25]
-                        }),
-                        title: feature.properties.Title,
-                        riseOnHover: true
-                    });
-                },
-                onEachFeature: function (feature, layer) {
-                    if (feature.properties) {
-                         var content =    "<table class='table-striped table-bordered table-condensed' style='width: 300px'> "+
-                                            "<tr><th>Title</th><td>" + feature.properties.Title + "</td></tr>"+
-                                            "<tr><th>URL</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>"+
-                                        "<table>";
-                        if (document.body.clientWidth <= 767) {
-                            layer.on({
-                                click: function(e) {
-                                    $("#feature-title").html(feature.properties.Title);
-                                    $("#feature-info").html(content);
-                                    $("#featureModal").modal("show");
-                                }
-                            });
-                        } else {
-                            layer.bindPopup(content, {
-                                maxWidth: "auto",
-                                closeButton: false
-                            });
-                        };
   </script>
   <div>
   	<p>This map is incomplete. When finished, users will be able to click on points representing news stories about Virginia archaeology. Ultimately, this map will pull news from the web and articles will be geocoded onto the map (it will also be much prettier).</p>
